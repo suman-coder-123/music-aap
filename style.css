@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #1db954;
+}
+
+.navbar {
+    height:60px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 15px;
+    color: #1db954;
+    padding: 10px;
+    cursor: pointer;
+}
+.bg {
+    bottom: 0;
+    text-align: end;
+}
+.container {
+    min-height: 72vh;
+    background-color: black;
+    color: #1db954;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   justify-content: space-between;
+   margin: 23px auto;
+   width: 95%;
+   border-radius: 12px;
+   padding: 34px;
+   background-image: url("bg.jpg");
+
+}
+.container h1 {
+    text-align: center;
+}
+.songlist {
+    padding: 10px;   
+}
+.songItemConatiner {
+    padding: 15px;
+    margin: 10px;
+    transition: transform 0.4s ease-in-out;
+
+}
+.songItemConatiner :hover {
+    transform: scale(1.1);
+}
+.songItem{
+    padding: 10px;
+    margin: 10px;
+    gap: 5px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white ;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: background 0.3s ease;
+
+}
+
+.songName{
+    padding:  10px 25px;
+}
+.songItemPlay{
+    padding:  10px;
+    cursor: pointer;
+}
+
+.songItem img {
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    border-radius: 50%;
+}
+.playerCard {
+    background-color: #1db954;
+    color: rgb(11, 11, 11);
+    padding: 20px;
+    margin: 60px ;
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+.playerCard img {
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+.controls button {
+    padding: 5px 10px ;
+    background-color: white;
+    color: #1db954;
+    margin: 5px;
+    border: none;
+    font-size: large;
+    border-radius: 5px;
+
+}
+#playerSongName {
+    padding: 10px;
+}
+.progress-container {
+    background: #333;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 15px ;
+    overflow: hidden;
+}
+.progress {
+    background-color: #ffffff;
+    width: 0%;
+    height: 100%;
+    transition: width 0.1s;
+}

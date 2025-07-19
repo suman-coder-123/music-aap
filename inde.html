@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+      <nav>
+        <div class="navbar">
+          <img src="logo.png" alt="logo" width="45px" height="45px">
+            <div class="home">Home</div>
+            <div class="songs">Songs</div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="songlist">
+          <h1> Your Songs <i class="fa-solid fa-heart" style="color: #1db954;"></i></h1>
+          <div class="songItemConatiner">
+            <div class="songItem" 
+            data-src="song/mp 1  (1).mp3">
+              <img src="covers/apna har din.jpg" alt="1">
+              <span class="songName">Apna Har Din </span>
+              <span class="songlistplay"> <span class="timestamp"> 04:43  <i id="0"  class=" songItemPlay fa-solid fa-play"></i></span></span>
+            </div>
+              <div class="songItem"
+              data-src="song/mp 1  (2).mp3">
+              <img src="covers/sahiba.jpeg" alt="1">
+              <span class="songName">Sahiba</span>
+              <span class="songlistplay"> <span class="timestamp"> 03:03 <i id="1"class=" songItemPlay fa-solid fa-play"></i></span></span>
+            </div>
+              <div class="songItem"
+              data-src="song/mp 1  (3).mp3">
+              <img src="covers/illahi.jpg" alt="1">
+              <span class="songName">Illahi</span>
+              <span class="songlistplay"> <span class="timestamp"> 03:24 <i id="2"class=" songItemPlay fa-solid fa-play"></i></span></span>
+            </div>
+              <div class="songItem"
+              data-src="song/mp 1  (4).mp3">
+              <img src="covers/prem ki Naiyya.jpeg" alt="1">
+              <span class="songName">Prem Ki Naiyya </span>
+              <span class="songlistplay"> <span class="timestamp"> 05:25<i id="3"class=" songItemPlay fa-solid fa-play"></i></span></span>
+            </div>
+              <div class="songItem"
+              data-src="song/mp 1  (5).mp3">
+              <img src="covers/humdum.jpeg" alt="1">
+              <span class="songName">Humdum</span>
+              <span class="songlistplay"> <span class="timestamp"> 04:04 <i id="4"class=" songItemPlay fa-solid fa-play"></i></span></span>
+            </div>
+              <div class="songItem"
+              data-src="song/mp 1  (6).mp3">
+              <img src="covers/befikra.jpeg" alt="1">
+              <span class="songName">Befikra</span>
+              <span class="songlistplay"> <span class="timestamp"> 05:59 <i id="5"class=" songItemPlay fa-solid fa-play"></i></span></span>
+            </div>
+              <div class="songItem"
+              data-src="song/mp 1  (7).mp3">
+              <img src="covers/teri yadd.jpg" alt="1">
+              <span class="songName">Teri Yaad</span>
+              <span class="songlistplay"> <span class="timestamp"> 03:59 <i id="6"class="songItemPlay fa-solid fa-play"></i></span></span>
+            </div>
+          </div> 
+        </div>   
+<div id="playerCard" style="display: none;" class="playerCard">
+  <h1>Spotify</h1>
+    
+    <img id="playerCover" src="" alt="cover" width="100" />
+        <h2 id="playerSongName">Song Title</h2>
+        <div class="progress-container">
+        <div class="progress">
+
+        </div>
+    </div>
+
+  <div class="controls">
+    <button id="prev"><i class="fa fa-backward"></i></button>
+    <button id="playpause"><i id="playpauseIcon" class="fa fa-play"></i></button>
+    <button id="next"><i class="fa fa-forward"></i></button>
+  </div>
+
+  <audio id="mainAudio" src=""></audio>
+
+</div>
+</div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
