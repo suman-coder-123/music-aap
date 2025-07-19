@@ -125,3 +125,79 @@ body {
     height: 100%;
     transition: width 0.1s;
 }
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .songItem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .playerCard {
+        width: 90%;
+        margin: 20px auto;
+        height: auto;
+    }
+
+    .playerCard img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .controls button {
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    .songName {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .songItem {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .playerCard {
+        width: 350px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+    .songItem {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .playerCard {
+        width: 300px;
+    }
+}
+
